@@ -1,7 +1,7 @@
 import express from "express";
 import subject from "../src/routes/subject.js";
 import exam from "../src/routes/exam.js";
-import nodejs from "../src/routes/nodejs.js";
+import node from "./routes/node.js";
 import mydata from "../src/routes/mydata.js";
 
 const app = express();
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.use(subject);
 app.use(exam);
-app.use(nodejs);
+app.use(node);
 app.use(mydata);
 
 // const PORT = 3333;
