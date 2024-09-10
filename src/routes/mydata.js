@@ -5,8 +5,8 @@ const router = Router();
 router.get("/mydata", (req, res) => {
   const subject = "ITE 314";
   const exam = "P2";
-  const nodejs = "NODEJS";
-  res.status(200).send({ subject, exam, nodejs });
+  const node = "NODEJS";
+  res.status(200).send({ subject, exam, node });
 });
 
 export default router;
